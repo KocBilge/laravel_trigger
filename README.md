@@ -1,1 +1,3 @@
-In this example, using the created method in the User model, we trigger the UserRegistered event when a user is registered. We then add an event listener (UserRegisteredListener) that listens for the UserRegistered event. The event listener handles sending notifications when a user is registered.
+In this example, using the created method in the User model, we trigger the UserRegistered event when a user is registered. We then add an event listener (UserRegisteredListener) that listens for the UserRegistered event. The event listener handles sending notifications when a user is registered and i created a trigger called after_user_insert. It will run every time a user insert (INSERT) occurs and add the relevant information to the user_notifications table. This trigger runs when we add a new user and adds the corresponding notification record to the user_notifications table.
+
+🚀 Here I wanted to show separately how to trigger with either model or migraiton.
