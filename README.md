@@ -1,1 +1,1 @@
-# laravel_trigger
+In this example, using the created method in the User model, we trigger the UserRegistered event when a user is registered. We then add an event listener (UserRegisteredListener) that listens for the UserRegistered event. The event listener handles sending notifications when a user is registered.
